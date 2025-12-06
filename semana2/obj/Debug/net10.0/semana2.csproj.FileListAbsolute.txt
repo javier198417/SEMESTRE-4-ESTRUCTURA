@@ -12,3 +12,4 @@ C:\Users\JAVIER\Desktop\UEA4\PROYECTO\semana2\obj\Debug\net10.0\refint\semana2.d
 C:\Users\JAVIER\Desktop\UEA4\PROYECTO\semana2\obj\Debug\net10.0\semana2.pdb
 C:\Users\JAVIER\Desktop\UEA4\PROYECTO\semana2\obj\Debug\net10.0\semana2.genruntimeconfig.cache
 C:\Users\JAVIER\Desktop\UEA4\PROYECTO\semana2\obj\Debug\net10.0\ref\semana2.dll
+C:\Users\JAVIER\Desktop\UEA4\PROYECTO\semana2\obj\Debug\net10.0\semana2.sourcelink.json
