@@ -1,0 +1,5 @@
+C:\Users\JAVIER\Desktop\PROYECTOS\practico\obj\Debug\net10.0\practico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAVIER\Desktop\PROYECTOS\practico\obj\Debug\net10.0\practico.AssemblyInfoInputs.cache
+C:\Users\JAVIER\Desktop\PROYECTOS\practico\obj\Debug\net10.0\practico.AssemblyInfo.cs
+C:\Users\JAVIER\Desktop\PROYECTOS\practico\obj\Debug\net10.0\practico.csproj.CoreCompileInputs.cache
+C:\Users\JAVIER\Desktop\PROYECTOS\practico\obj\Debug\net10.0\practico.sourcelink.json
