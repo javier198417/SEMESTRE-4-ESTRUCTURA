@@ -3,6 +3,46 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-    <h2>Bienvenido a la página principal</h2>
-    <p>Este es el inicio de tu aplicación Flask con plantillas dinámicas.</p>
+<div class="hero">
+    <h1>Bienvenido al Sistema de Inventario</h1>
+    <p>Sistema completo con múltiples métodos de persistencia de datos</p>
+</div>
+
+<div class="features-grid">
+    <div class="feature-card">
+        <h3>Archivos TXT</h3>
+        <p>Persistencia básica con archivos de texto plano</p>
+        <a href="/contactos" class="btn">Probar TXT</a>
+    </div>
+    
+    <div class="feature-card">
+        <h3>Archivos JSON</h3>
+        <p>Almacenamiento estructurado con formato JSON</p>
+        <a href="/contactos" class="btn">Probar JSON</a>
+    </div>
+    
+    <div class="feature-card">
+        <h3>Archivos CSV</h3>
+        <p>Datos tabulares en formato CSV</p>
+        <a href="/contactos" class="btn">Probar CSV</a>
+    </div>
+    
+    <div class="feature-card">
+        <h3>SQLite + SQLAlchemy</h3>
+        <p>Base de datos relacional con ORM</p>
+        <a href="/productos" class="btn">Gestionar Productos</a>
+    </div>
+</div>
+
+<div class="info-section">
+    <h2>Características del Sistema</h2>
+    <ul>
+        <li>✅ Persistencia con archivos TXT usando open()</li>
+        <li>✅ Persistencia con archivos JSON usando librería json</li>
+        <li>✅ Persistencia con archivos CSV usando librería csv</li>
+        <li>✅ Base de datos SQLite con SQLAlchemy ORM</li>
+        <li>✅ CRUD completo para productos</li>
+        <li>✅ Visualización de datos desde diferentes fuentes</li>
+    </ul>
+</div>
 {% endblock %}

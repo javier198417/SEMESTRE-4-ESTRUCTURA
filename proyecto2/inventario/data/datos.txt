@@ -1,0 +1,15 @@
+Nombre: Juan Pérez
+Email: juan@email.com
+Mensaje: Consulta sobre productos
+Fecha: 2024-01-15 10:30:45
+--------------------------------------------------
+Nombre: María García
+Email: maria@email.com
+Mensaje: Solicito información de precios
+Fecha: 2024-01-15 11:20:30
+--------------------------------------------------
+Nombre: Carlos López
+Email: carlos@email.com
+Mensaje: Pedido de 10 unidades
+Fecha: 2024-01-15 14:45:12
+--------------------------------------------------

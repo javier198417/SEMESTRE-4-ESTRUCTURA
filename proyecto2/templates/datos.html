@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Datos en formato {{ formato }}{% endblock %}
+
+{% block content %}
+<h1>Datos almacenados en formato {{ formato }}</h1>
+
+<div class="datos-container">
+    {% if datos %}
+        {% if formato == 'TXT' %}
+            <div class="txt-viewer">
+                {% for linea in datos %}
+                    <p>{{ linea }}</p>
+                {% endfor %}
+            </div>
+        
+        {% elif formato == 'JSON' %}
+            <div class="json-viewer">
+                {% for registro in datos %}
+                    <div class="json-item">
+                        <p><strong>Nombre:</strong> {{ registro.nombre }}</p>
+                        <p><strong>Email:</strong> {{ registro.email }}</p>
+                        <p><strong>Mensaje:</strong> {{ registro.mensaje }}</p>
+                        <p><strong>Fecha:</strong> {{ registro.fecha }}</p>
+                        <hr>
+                    </div>
+                {% endfor %}
+            </div>
+        
+        {% elif formato == 'CSV' %}
+            <div class="csv-viewer">
+                <table class="data-table">
+                    {% for fila in datos %}
+                        <tr>
+                            {% for celda in fila %}
+                                <td>{{ celda }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        
+        {% elif formato == 'SQLite' %}
+            <div class="sqlite-viewer">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Categoría</th>
+                            <th>Fecha Registro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for producto in datos %}
+                        <tr>
+                            <td>{{ producto.id }}</td>
+                            <td>{{ producto.nombre }}</td>
+                            <td>${{ "%.2f"|format(producto.precio) }}</td>
+                            <td>{{ producto.cantidad }}</td>
+                            <td>{{ producto.categoria }}</td>
+                            <td>{{ producto.fecha_registro.strftime('%d/%m/%Y %H:%M') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+    {% else %}
+        <p class="no-data">No hay datos disponibles en formato {{ formato }}</p>
+    {% endif %}
+    
+    <div class="actions">
+        <a href="/contactos" class="btn">Volver a Contactos</a>
+        <a href="/productos" class="btn">Volver a Productos</a>
+    </div>
+</div>
+{% endblock %}

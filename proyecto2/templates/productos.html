@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Productos (SQLite){% endblock %}
+
+{% block content %}
+<h1>Gestión de Productos con SQLite + SQLAlchemy</h1>
+
+<a href="/producto/nuevo" class="btn btn-primary">➕ Nuevo Producto</a>
+
+<div class="productos-grid">
+    {% if productos %}
+        {% for producto in productos %}
+        <div class="producto-card">
+            <h3>{{ producto.nombre }}</h3>
+            <p class="precio">Precio: ${{ "%.2f"|format(producto.precio) }}</p>
+            <p class="cantidad">Cantidad: {{ producto.cantidad }}</p>
+            <p class="categoria">Categoría: {{ producto.categoria }}</p>
+            <p class="fecha">Registro: {{ producto.fecha_registro.strftime('%d/%m/%Y') }}</p>
+            
+            <div class="producto-actions">
+                <a href="/producto/editar/{{ producto.id }}" class="btn-edit">✏️ Editar</a>
+                <a href="/producto/eliminar/{{ producto.id }}" class="btn-delete" onclick="return confirm('¿Estás seguro de eliminar este producto?')">🗑️ Eliminar</a>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p class="no-data">No hay productos registrados en SQLite.</p>
+    {% endif %}
+</div>
+{% endblock %}

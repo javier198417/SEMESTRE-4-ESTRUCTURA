@@ -2,26 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Mi Proyecto Flask{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sistema de Inventario{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Mi Proyecto Flask</h1>
-        <nav>
-            <a href="{{ url_for('index') }}">Inicio</a>
-            <a href="{{ url_for('about') }}">Acerca de</a>
-            <a href="{{ url_for('productos') }}">Productos</a>
-            <a href="{{ url_for('clientes') }}">Clientes</a>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">Sistema Inventario</a>
+            <ul class="nav-menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos (SQLite)</a></li>
+                <li><a href="/contactos">Contactos</a></li>
+                <li><a href="/leer-txt">Ver TXT</a></li>
+                <li><a href="/leer-json">Ver JSON</a></li>
+                <li><a href="/leer-csv">Ver CSV</a></li>
+                <li><a href="/leer-sqlite">Ver SQLite</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
+    <main class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
-        <p>© 2026 Mi Proyecto Flask</p>
+    <footer class="footer">
+        <p>&copy; 2024 Sistema de Inventario - Proyecto Flask</p>
     </footer>
 </body>
 </html>
