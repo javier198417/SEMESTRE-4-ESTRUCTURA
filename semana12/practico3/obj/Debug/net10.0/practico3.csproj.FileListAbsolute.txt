@@ -1,0 +1,15 @@
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\bin\Debug\net10.0\practico3.exe
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\bin\Debug\net10.0\practico3.deps.json
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\bin\Debug\net10.0\practico3.runtimeconfig.json
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\bin\Debug\net10.0\practico3.dll
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\bin\Debug\net10.0\practico3.pdb
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.AssemblyInfoInputs.cache
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.AssemblyInfo.cs
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.csproj.CoreCompileInputs.cache
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.sourcelink.json
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.dll
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\refint\practico3.dll
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.pdb
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\practico3.genruntimeconfig.cache
+C:\Users\JAVIER\Desktop\UEA4\2025-2026\ESTRUCTURA DE DATOS\semana12\practico3\obj\Debug\net10.0\ref\practico3.dll
