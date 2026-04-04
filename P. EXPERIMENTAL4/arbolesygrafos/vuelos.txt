@@ -1,0 +1,6 @@
+Origen;Destino;Costo
+Madrid;Barcelona;50
+Madrid;Londres;120
+Barcelona;Roma;80
+Londres;NuevaYork;300
+Roma;Madrid;90
